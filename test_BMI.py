@@ -37,17 +37,17 @@ class TestCategorizeBMI(unittest.TestCase):
         self.assertEqual(categorizeBMI(17.5),"underweight","Should be underweight")
     
     def test_underweight_min(self):
-        self.assertEqual(categorizeBMI(18.5),"underweight","Should be underweight")
+        self.assertEqual(categorizeBMI(18.4),"underweight","Should be underweight")
 
     def test_underweight_over(self):
-        self.assertEqual(categorizeBMI(19.5),"normal weight","Should be normal weight")
+        self.assertEqual(categorizeBMI(19.4),"normal weight","Should be normal weight")
 
     #Test functions for the normal weight if statement
     def test_normal_under(self):
         self.assertEqual(categorizeBMI(17.5),"underweight","Should be underweight")
 
     def test_normal_min(self):
-        self.assertEqual(categorizeBMI(18.6),"normal weight","Should be normal weight")
+        self.assertEqual(categorizeBMI(18.5),"normal weight","Should be normal weight")
 
     def test_normal_interior(self):
         self.assertEqual(categorizeBMI(21.75),"normal weight","Should be normal weight")
