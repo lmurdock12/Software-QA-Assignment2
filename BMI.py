@@ -42,9 +42,9 @@ def categorizeBMI(bmi):
     
         Returns the category name as a string
     """
-    if bmi <= 18.6:
+    if bmi <= 18.5:
         return "underweight"
-    elif bmi > 18.6 and bmi <= 24.9:
+    elif bmi > 18.5 and bmi <= 24.9:
         return "normal weight"
     elif bmi >= 25 and bmi <= 29.9:
         return "overweight"
